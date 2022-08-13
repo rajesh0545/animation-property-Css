@@ -1,0 +1,28 @@
+.annimate {
+  height:300px;
+  width:300px;
+  margin: 30px;
+  border: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: aqua;
+  animation-name: box;
+  animation-duration: 5000ms;
+  animation-iteration-count:inherit;
+}
+@keyframes box {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: chartreuse;
+        transform:scaleX(100deg);
+        transform: translate(50%);
+    }
+}
